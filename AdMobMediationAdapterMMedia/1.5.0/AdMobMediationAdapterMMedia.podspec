@@ -9,9 +9,9 @@ Pod::Spec.new do |s|
 		 :tag => s.version.to_s }
   s.description = 'By default mediation adapters are not included into iOS AdMob SDK. Each mediation network other than AdMob requries additional library component. This is Millenia Media mediation adapter library from Millenia Media.'
   s.platform = :ios
-  s.ios.deployment_target = '5.0'
+  s.ios.deployment_target = '6.0'
   s.source_files   = 'Classes/*.h'
-  s.preserve_paths = 'Classes/*.a'
+  s.preserve_path = 'Classes/libAdapterMillennial.a'
   s.dependency 'Google-Mobile-Ads-SDK', '~> 6.12.2'
   s.dependency 'MillennialMediaSDK', '~> 5.4.1'
   s.library    = 'AdapterMillennial'
